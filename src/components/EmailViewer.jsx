@@ -14,11 +14,16 @@ export default function EmailViewer({ email }) {
         <div className="emailviewer-container">
             <h2 className="emailviewer-title">{email.assunto}</h2>
             <div className="emailviewer-metadata">
-                <div className="emailviewer-metadata-row">
+                {/* Lado esquerdo: De e Cc empilhados um embaixo do outro */}
+                <div className="emailviewer-metadata-left">
                     <span><strong>De:</strong> {email.remetente}</span>
                     {email.cc && (
-                        <span><strong>CC:</strong> {email.cc}</span>
+                        <span><strong>Cc:</strong> {email.cc}</span>
                     )}
+                </div>
+                
+                {/* Lado direito: Data ao lado de tudo */}
+                <div className="emailviewer-metadata-right">
                     <span><strong>Data:</strong> {email.data}</span>
                 </div>
             </div>

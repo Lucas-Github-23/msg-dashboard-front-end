@@ -16,14 +16,25 @@ color: #6b7280
 
 .emailviewer-metadata {
     margin-bottom: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #e5e7eb;
     color: #4b5563;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    justify-content: space-between;
+    align-items: flex-start; 
 }
 
+.emailviewer-metadata-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+}
+
+.emailviewer-metadata-right {
+    white-space: nowrap;
+    font-size: 14px;
+    color: #6b7280;
+}
 .emailviewer-metadata-row {
     display: flex;
     gap: 30px;
