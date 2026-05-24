@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 120" width="480" height="120" role="img" aria-labelledby="title desc">
+  <title id="title">Em Construção</title>
+  <desc id="desc">Martelo batendo e texto Em Construção... com pontos piscando</desc>
+  <style>
+    .bg{fill:transparent}
+    .emoji{font-size:48px}
+    .title{font-family: 'Fira Code', 'Consolas', 'Menlo', 'Monaco', monospace; font-weight:600; font-size:28px; fill:#111827}
+    .dot{font-size:28px; fill:#111827; opacity:1}
+  </style>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <text id="hammer" x="36" y="78" class="emoji">🔨</text>
+  <text x="96" y="78" class="title">Em Construção
+    <tspan id="dot1" class="dot">.</tspan>
+    <tspan id="dot2" class="dot">.</tspan>
+    <tspan id="dot3" class="dot">.</tspan>
+  </text>
+
+  <animateTransform xlink:href="#hammer" attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="0.9s" repeatCount="indefinite" />
+
+  <animate xlink:href="#dot1" attributeName="opacity" values="1;0;1" dur="1.2s" begin="0s" repeatCount="indefinite" />
+  <animate xlink:href="#dot2" attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.3s" repeatCount="indefinite" />
+  <animate xlink:href="#dot3" attributeName="opacity" values="1;0;1" dur="1.2s" begin="0.6s" repeatCount="indefinite" />
+</svg>

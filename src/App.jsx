@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './index.css';
 import Sidebar from './components/Sidebar';
 import EmailViewer from './components/EmailViewer';
@@ -28,11 +29,13 @@ const mockEmails = [
 
 
 function App() {
+  const [selectedEmail, setSelectedEmail] = useState(null);
+
   return (
     <div className="App" style={{ padding: '20px' }}>
       <div style={{ display: 'flex', height: '100vh', width: '100vw' }}>
-        <Sidebar emails={mockEmails} />
-        <EmailViewer />
+        <Sidebar emails={mockEmails} onEmailSelect={setSelectedEmail} />
+        <EmailViewer email={selectedEmail} />
 
       </div>
     </div>
