@@ -7,23 +7,34 @@ const mockEmails = [
   {
     id: 1,
     remetente: "chefe@empresa.com",
+    cc: "diretoria@empresa.com, rh@empresa.com", // <-- Adicionamos o Cc aqui!
     assunto: "Relatório Financeiro Q3",
     data: "24/05/2026",
-    corpo: "Segue o relatório para análise da diretoria."
+    corpo: "<h2>Relatório Q3</h2><p>Segue o relatório para análise da <strong>diretoria</strong>.</p><ul><li>Vendas subiram 10%</li><li>Custos caíram 5%</li></ul>",
+    anexos: [
+      { id: 101, nome: "balanco_q3.xlsx", tamanho: "45 KB" },
+      { id: 102, nome: "notas_fiscais.pdf", tamanho: "1.2 MB" }
+    ]
   },
   {
     id: 2,
     remetente: "ti@empresa.com",
+    // Sem Cc neste aqui
     assunto: "Alerta de Segurança do Servidor",
     data: "23/05/2026",
-    corpo: "Detectamos acessos suspeitos na rede."
+    corpo: "Detectamos acessos suspeitos na rede.",
+    anexos: []
   },
   {
     id: 3,
     remetente: "rh@empresa.com",
+    cc: "ti@empresa.com", // <-- E um Cc simples aqui
     assunto: "Festa de Fim de Ano",
     data: "20/05/2026",
-    corpo: "Confirme sua presença na nossa confraternização!"
+    corpo: "Confirme sua presença na nossa confraternização!",
+    anexos: [
+      { id: 103, nome: "convite.jpg", tamanho: "800 KB" }
+    ]
   }
 ];
 
