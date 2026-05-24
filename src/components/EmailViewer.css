@@ -1,0 +1,16 @@
+.emailviewer-container{
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    overflow: auto;
+}
+
+.emailviewer-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.emailviewer-text { 
+color: #6b7280
+}
+

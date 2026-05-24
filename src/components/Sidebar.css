@@ -1,0 +1,26 @@
+.sidebar-container{
+    width: 300px;
+    background-color: #f9fafb; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+.sidebar-text {
+    font-size: 14px;
+    color: #6b7280; 
+}
+
+.sidebar-item {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb; 
+    cursor: pointer;
+    
+}
